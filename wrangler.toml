@@ -7,3 +7,11 @@ keep_vars = true
 kv_namespaces = [
   { binding = "KV", id = "07dca53d24bd45939b93e3a7af3c8df2" }
 ]
+
+[observability]
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+persist = true
+
