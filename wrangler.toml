@@ -1,8 +1,16 @@
-name = "v20251104"
+name = "restless-resonance-5861"
 main = "_worker.js"
 compatibility_date = "2025-11-04"
+
 keep_vars = true
 
-#[[kv_namespaces]]
-#binding = "KV"			#KV绑定名默认不可修改
-#id = ""				#KV数据库id
+kv_namespaces = [
+  { binding = "KV", id = "07dca53d24bd45939b93e3a7af3c8df2" }
+]
+
+[observability]
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+invocation_logs = true
+persist = true
